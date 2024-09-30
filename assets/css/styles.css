@@ -1,0 +1,445 @@
+/* Overall Configs */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.title {
+    color: white !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.container {
+    padding-top: 120px;
+}
+
+/* Smooth Scroller */
+.smooth-scroll-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Floating Navbar */
+.menu-top {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #111111;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #6e6a6a1a;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    min-width: 40%;
+    height: 60px;
+}
+
+/* Main Section */
+.main-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Main Title Custom Effects */
+.highlight-problem {
+    background: linear-gradient(270deg, #ffffff, #ffcccc,#ff6666,#ff3333,#cc0000);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 5s ease infinite;
+}
+.highlight-opport {
+    background: linear-gradient(270deg, #ffffff,#ccffe6,#99ffcc,#33cc99,#009999,#006699);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 5s ease infinite;
+}
+.highlight-body-opport {
+    background: linear-gradient(270deg, #ffffff,#ccffe6,#99ffcc,#33cc99,#009999,#006699);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Project Anchor */
+.title-anchor {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-weight: 600; 
+}
+.title-anchor::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: -3px;
+    transition: width 0.3s ease;
+}
+
+.title-anchor:hover::after {
+    width: 100%;
+}
+
+/* Title with Typing effect */
+.text-container {
+    overflow: hidden;
+    display: inline-block;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    text-align: start;
+    border-right: 0.15em solid white;
+    white-space: nowrap;
+    animation: typing 4s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+    width: 100%;
+    max-width: 100%;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; } 
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+@media (max-width: 1500px) {
+    .text-container {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .text-container {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-container {
+        font-size: 1.5em;
+        white-space: normal;
+        display: block;
+        width: auto;
+        animation: none;
+    }
+}
+
+/* Project Cards */
+.project-card {
+    background-color: #222222;
+    border-radius: 10px;
+    color: #f1f1f1;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 1.5rem;
+    z-index: 2;
+}
+
+.project-section {
+    margin-bottom: 3rem; /* Space between sections */
+    position: relative;
+}
+
+/* Cards Images */
+.image-container {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+}
+
+.project-image-wrapper:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.custom-width {
+    width: 80%; 
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-width:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-image-wrapper:hover .project-image {
+    transform: scale(1.1);
+}
+
+.project-image-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+/* Cards Texts */
+.card-title {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #e2e2e2;
+    font-weight: bold;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.fading-effect {
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0, 0, 0, 0.205));
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.disabled-link {
+    pointer-events: none;
+    color: gray;
+    text-decoration: none;
+    cursor: not-allowed;
+}
+
+.section-title {
+    top: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.title-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fdfbfb;
+    text-align: right;
+    line-height: 1;
+}
+
+/* Images Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 1s ease;
+}
+
+.overlay:hover .overlay-link {
+    background-color: #222222;
+}
+
+/* Cards Button */
+.btn-primary {
+    background-color: #141414;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #080808;
+}
+
+/* Contact Section */
+#contact-section {
+    color: #fff;
+    padding: 50px 0;
+}
+
+#contact-section h2 {
+    color: #fff;
+}
+
+.contact-link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact-section ul {
+    padding: 0;
+    list-style: none;
+}
+
+#contact-section li {
+    display: flex;
+    align-items: center;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.contact-icon {
+    width: 100%;
+    height: auto;
+    max-width: 50px;
+    fill: #f6f6f7;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    /* Navbar responsiveness */
+    .menu-top {
+        width: 60%;
+        top: 10px;
+        padding: 5px 15px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    /* Adjust main section padding */
+    .main-section, 
+    .container {
+        padding-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Adjust text sizes */
+    .fixed-text {
+        font-size: 1.8rem; /* Make the text smaller */
+    }
+    .scrolling-text {
+        font-size: 1.6rem; /* Slightly smaller text for scrolling words */
+    }
+
+    /* Title and section text scaling */
+    .display-4 {
+        font-size: 2rem;
+    }
+    .highlight-problem,
+    .highlight-opport {
+        font-size: 1.8rem; /* Adjust gradient text size */
+    }
+
+    /* Cards and project sections */
+    .custom-width {
+        width: 100%; /* Ensure cards are full-width on smaller screens */
+        max-width: 100%; /* Override the max-width for cards */
+    }
+
+    /* Adjust project section margin */
+    .project-section {
+        margin-bottom: 2rem;
+    }
+
+    /* Contact section adjustments */
+    .contact-link {
+        font-size: 1.2rem; /* Make contact links smaller */
+    }
+
+    /* Carousel scaling */
+    .carousel-item img {
+        height: auto; /* Ensure images scale properly */
+        max-height: 300px; /* Limit height for mobile devices */
+    }
+
+    .title-text {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: right;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Further adjustments for very small screens */
+    .fixed-text {
+        font-size: 1.5rem;
+    }
+    .scrolling-text {
+        font-size: 1.3rem;
+    }
+    .title-anchor {
+        font-size: 1rem;
+    }
+
+    /* Decrease padding in sections */
+    .main-section,
+    .container {
+        padding: 10px;
+    }
+
+    /* Adjust footer and contact sections */
+    footer,
+    .contact-link {
+        font-size: 1rem;
+    }
+    .title-text {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: right;
+    }
+}
