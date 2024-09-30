@@ -1,4 +1,4 @@
-# Welcome to My Portfolio!
+# Welcome to My [Portfolio!](https://eduardotakemura.github.io/portfolio/)
 Hi there! My name is **Eduardo**, I'm an Electrical Engineer turned **Software Developer**. 
 With over three years of experience in budgeting and project management in the **Energy Sector**, I transitioned my career into programming and technology to pursue a path where I could make a meaningful impact.
 
