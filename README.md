@@ -2,6 +2,20 @@
 Hi there! My name is **Eduardo**, I'm an Electrical Engineer turned **Software Developer**. 
 With over three years of experience in budgeting and project management in the **Energy Sector**, I transitioned my career into programming and technology to pursue a path where I could make a meaningful impact.
 
+## Featured Projects
+- **[CNN Handwritten Digits Predictor](https://github.com/eduardotakemura/handwritten-digits-classifier)**
+- **[React Trello-like App](https://github.com/eduardotakemura/trello-like-page)**
+- **[Image Segmentator/Diffusor](https://github.com/eduardotakemura/image-segmentation)**
+- **[Text-to-Image Multimodal Generator](https://github.com/eduardotakemura/text-to-image-generator)**
+- **[Real State Analyzer/Price Predictor](https://github.com/eduardotakemura/real-state-analyzer)**
+- **[Feedback Sentiment Analyzer](https://github.com/eduardotakemura/feedback-sentiment-analyzer)**
+- **[Space Invaders on Python's Turtle](https://github.com/eduardotakemura/space-invaders)**
+- **Movie Recommendator** (on deployment)
+- **E-Commerce Full-Stack Web App** (on deployment)
+- **Ethereum Funding Raising App** (on deployment)
+- **Linkedin Automation Bot** (on deployment)
+- **Client Support ChatBot** (on deployment)
+  
 ## About Me
 I've developed projects mostly in:
 - **Full-Stack Dev**: Backend using **Flask** and **Node**, Frontend with **Bootstrap** and **React**, and storage with SQL DB such as **PostgreSQL** and **SQLite**;
