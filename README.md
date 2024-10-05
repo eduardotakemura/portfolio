@@ -7,15 +7,15 @@ a path where I could make a meaningful impact.
 - **[CNN Handwritten Digits Predictor](https://github.com/eduardotakemura/handwritten-digits-classifier)**
 - **[React Trello-like App](https://github.com/eduardotakemura/trello-like-page)**
 - **[E-Commerce Full-Stack Web App](https://github.com/eduardotakemura/e-commerce)**
-- **[Image Segmentator/Diffusor](https://github.com/eduardotakemura/image-segmentation)**
+- **[Neural Collaborative Filtering Movie Recommendator](https://github.com/eduardotakemura/movie-recommendator)**
+- **[Image Segmentator/Diffusor for Image Editing](https://github.com/eduardotakemura/image-segmentation)**
 - **[Text-to-Image Multimodal Generator](https://github.com/eduardotakemura/text-to-image-generator)**
 - **[Real State Analyzer/Price Predictor](https://github.com/eduardotakemura/real-state-analyzer)**
-- **[Feedback Sentiment Analyzer](https://github.com/eduardotakemura/feedback-sentiment-analyzer)**
+- **[Feedback Text-Sentiment Analyzer](https://github.com/eduardotakemura/feedback-sentiment-analyzer)**
 - **[Space Invaders on Python's Turtle](https://github.com/eduardotakemura/space-invaders)**
 
 ## Under Development
-- **Movie Recommendator using Deep Learning**
-- **Ethereum Funding Raising App**
+- **Ethereum Funding Raising dApp**
 - **LinkedIn Automation Bot**
 - **Client Support Text-Generative ChatBot**
   
