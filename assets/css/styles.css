@@ -176,12 +176,6 @@ body {
   }
 }
 
-@media (max-width: 1000px) {
-  .text-container {
-    font-size: 1.3em;
-  }
-}
-
 @media (max-width: 992px) {
   .text-container {
     font-size: 1.5em;
@@ -489,4 +483,137 @@ body {
     font-weight: bold;
     text-align: right;
   }
+}
+
+/* Features Section */
+features-section {
+  background-color: #111111;
+  color: #f1f1f1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.feature-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #222222;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+  margin-bottom: 15px;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #e2e2e2;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .feature-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .feature-title {
+    font-size: 1.2rem;
+  }
+  .feature-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Services Section */
+#services-section .row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.feature-item {
+  margin-bottom: 0;
+  padding: 20px;
+  width: 100%;
+  background-color: #222222;
+  border-radius: 10px;
+  border: 1px solid #99ffcc34;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+  #services-section .row {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  #services-section .row {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+}
+
+/* CTA Section */
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cta-button {
+  background-color: #222222;
+  border: 1px solid #99ffcc34;
+  padding: 15px 30px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: rgba(0, 0, 0, 0.396);
+}
+
+/* Floating Button */
+.floating-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.floating-button .btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.floating-button .btn:hover {
+  transform: translateY(-3px);
 }
