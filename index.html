@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="icon" type="image/png" href="./../images/favicon.png" />
   </head>
   <body>
     <script>
-      const userLang = navigator.language || navigator.userLanguage
+      const userLang = navigator.language || navigator.userLanguage;
       if (userLang.startsWith('pt')) {
-        window.location.href = './pt/'
+        window.location.href = './pt/';
       } else {
-        window.location.href = './en/'
+        window.location.href = './en/';
       }
     </script>
   </body>
