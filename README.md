@@ -1,25 +1,24 @@
-# Welcome to My [Portfolio!](https://eduardotakemura.github.io/portfolio/)
+# Welcome to My [Portfolio!](https://eduardotakemura.vercel.app/)
 
 Hi there! My name is **Eduardo**, I'm an Electrical Engineer and Software Developer.
-With over three years of experience in budgeting and project management in the **Energy Sector**, I transitioned my career into programming and technology to pursue a path where I could make a meaningful impact.
+With over four years of experience in budgeting and project management in the **Energy Sector**, I transitioned my career into programming and technology to pursue a path where I could make a meaningful impact.
 
 ## Featured Projects
 
+- **[LinkedIn Browser Extension](https://github.com/eduardotakemura/linkedin-buddy/)**
 - **[CNN Handwritten Digits Predictor](https://github.com/eduardotakemura/handwritten-digits-classifier)**
 - **[React Trello-like App](https://github.com/eduardotakemura/trello-like-page)**
-- **[E-Commerce Full-Stack Web App](https://github.com/eduardotakemura/e-commerce)**
+- **[Flask E-Commerce Full-Stack Web App](https://github.com/eduardotakemura/e-commerce)**
 - **[Neural Collaborative Filtering Movie Recommendator](https://github.com/eduardotakemura/movie-recommendator)**
 - **[Image Segmentator/Diffusor for Image Editing](https://github.com/eduardotakemura/image-segmentation)**
 - **[Text-to-Image Multimodal Generator](https://github.com/eduardotakemura/text-to-image-generator)**
-- **[Real State Analyzer/Price Predictor](https://github.com/eduardotakemura/real-state-analyzer)**
 - **[Feedback Text-Sentiment Analyzer](https://github.com/eduardotakemura/feedback-sentiment-analyzer)**
 - **[Space Invaders on Python's Turtle](https://github.com/eduardotakemura/space-invaders)**
+- **[Next.js Business Page](https://github.com/eduardotakemura/next-js-power-fit)**
 
 ## Under Development
-
-- **Ethereum Funding Raising dApp**
-- **LinkedIn Automation Bot**
-- **Client Support Text-Generative ChatBot**
+- **[Real State Analyzer/Price Predictor](https://github.com/eduardotakemura/real-state-analyzer)**
+- **[Marketplace Mobile App](https://eduardotakemura.github.io/marketplace-demo/)**
 
 ## Experiences
 
