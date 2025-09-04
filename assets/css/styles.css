@@ -622,13 +622,88 @@ features-section {
 }
 
 /* Social Media Icons */
-.social-icons-row .social-icon {
+.social-icons-container {
+  padding: 20px 0;
+}
+
+.social-icon-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.social-icon-link:hover {
+  text-decoration: none;
+  color: inherit;
+  transform: translateY(-5px);
+}
+
+.social-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #222222, #333333);
+  border-radius: 15px;
+  border: 1px solid #99ffcc34;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  min-width: 120px;
+  min-height: 120px;
+}
+
+.social-icon-wrapper:hover {
+  background: linear-gradient(135deg, #333333, #444444);
+  border-color: #99ffcc;
+  box-shadow: 0 8px 25px rgba(153, 255, 204, 0.2);
+  transform: scale(1.05);
+}
+
+.social-icon {
   color: #f1f1f1;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.social-icon-wrapper:hover .social-icon {
+  color: #99ffcc;
+  transform: scale(1.1);
+}
+
+.social-label {
+  color: #f1f1f1;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 5px;
   transition: color 0.3s ease;
 }
 
-.social-icons-row .social-icon:hover {
-  color: #4b4848;
+.social-icon-wrapper:hover .social-label {
+  color: #99ffcc;
+}
+
+.contact-info {
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #99ffcc34;
+}
+
+.contact-info p {
+  margin: 0;
+  color: #f1f1f1;
+}
+
+.contact-info .text-muted {
+  color: #888 !important;
+  font-size: 0.9rem;
+}
+
+.contact-info strong {
+  color: #99ffcc;
+  font-size: 1.1rem;
 }
 
 /* Modal */
@@ -746,5 +821,57 @@ features-section {
 
   .tech-icon-container {
     padding: 10px;
+  }
+}
+
+/* Social Icons Responsive Design */
+@media (max-width: 768px) {
+  .social-icons-row {
+    flex-direction: column;
+    gap: 15px !important;
+  }
+  
+  .social-icon-wrapper {
+    min-width: 100px;
+    min-height: 100px;
+    padding: 15px;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-label {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .social-icons-container {
+    padding: 10px 0;
+  }
+  
+  .social-icon-wrapper {
+    min-width: 80px;
+    min-height: 80px;
+    padding: 10px;
+  }
+  
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .social-label {
+    font-size: 0.7rem;
+  }
+  
+  .contact-info {
+    padding: 15px;
+  }
+  
+  .contact-info strong {
+    font-size: 1rem;
   }
 }
